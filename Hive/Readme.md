@@ -28,7 +28,7 @@ The following external tables were created in Hive using the cleaned Parquet fil
 
 📸 Below is a snapshot of the table structures:
 
-![Hive Tables](./results/hive_tables.png)
+![Hive Tables](./Hive%20Results/Hive-tables.png)
 
 ---
 
@@ -36,9 +36,9 @@ The following external tables were created in Hive using the cleaned Parquet fil
 
 | Query Description                      | Chart |
 |----------------------------------------|--------|
-| Average length of stay per diagnosis   | ![](./results/avg_length_stay.png) |
-| Distribution of ICU readmissions       | ![](./results/icu_readmission.png) |
-| Mortality by gender and age group      | ![](./results/mortality_gender_age.png) |
+| Average length of stay per diagnosis   |![](./Hive%20Results/Average%20length%20of%20stay%20per%20diagnosis.png) |
+| Distribution of ICU readmissions       |![](./Hive%20Results/Distribution%20of%20ICU%20readmissions.png) |
+| Mortality by gender and age group      |![](./Hive%20Results/Mortality%20by%20gender%20and%20age%20groups.png) |
 
 ---
 
