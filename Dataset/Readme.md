@@ -1,30 +1,41 @@
-# 🗂️ MIMIC-III Dataset (Extracted Files)
+# 📁 Raw Dataset (MIMIC-III)
 
-This folder contains selected and preprocessed CSV files from the **MIMIC-III Clinical Database**, which were used in the Big Data Healthcare Analytics Pipeline project.
-
----
-
-## 📊 Files Description
-
-| File Name           | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| `patients.csv`      | Contains demographic details of patients (gender, date of birth, death...). |
-| `admissions.csv`    | Records hospital admissions including admission type, time, and discharge.  |
-| `icustays.csv`      | ICU-specific admission records and ICU stay durations.                      |
-| `diagnoses_icd.csv` | Medical diagnoses associated with admissions using ICD codes.               |
+This folder contains a selection of raw CSV files extracted from the MIMIC-III Clinical Database.  
+These files are the **starting point** of the pipeline — before any cleaning or transformation.
 
 ---
 
-## 🧾 Notes
+## 📄 Files Overview
 
-- These files are raw (unmodified) extracts from the original MIMIC-III dataset.
-- Used as inputs for data cleaning and further processing using Python + pandas.
-- Files were later converted to **Parquet format** and stored in HDFS for querying via Hive.
+| File | Description |
+|------|-------------|
+| **patients.csv** | Demographic information like gender, date of birth, and death. Each row = one patient. |
+| **admissions.csv** | Admission-level info like admission time, type, discharge time, and death flag. |
+| **icustays.csv** | ICU-specific admissions with in/out times and duration of stay. |
+| **diagnoses_icd.csv** | Diagnoses during admissions, coded using ICD (International Classification of Diseases). |
 
 ---
 
-## ⚠️ Licensing
+## ✅ Why These Files?
 
-The full MIMIC-III dataset is available upon request from [PhysioNet](https://mimic.physionet.org/).  
-These CSV files are shared here only as part of academic demonstration and **do not contain sensitive information**.
+These four files were chosen because they offer a good base for analytics like:
+- Patient age calculation
+- ICU admission patterns
+- Mortality analysis
+- Disease frequency (via ICD codes)
+
+---
+
+## 📝 Notes
+
+- These are raw CSVs directly from the original MIMIC-III dump.
+- No cleaning or formatting was applied here.
+- Cleaned and transformed versions are available under [`Cleaned_Data/`](../Cleaned_Data/).
+
+---
+
+## 🔗 Source
+
+Original dataset available from [PhysioNet](https://mimic.physionet.org/).  
+Usage requires credentialed access and agreement to the data license.
 
