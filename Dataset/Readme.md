@@ -48,7 +48,7 @@ MIMIC-III (Medical Information Mart for Intensive Care) is a large, publicly ava
 Only a subset of this dataset was used in this project based on relevance.
 
 🔗 Full schema and table descriptions are available at:  
-https://mimic.mit.edu/docs/iii/
+[https://mimic.mit.edu/docs/iii/](https://physionet.org/content/mimiciii-demo/1.4/)
 
 
 
