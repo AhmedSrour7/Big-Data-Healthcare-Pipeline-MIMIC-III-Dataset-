@@ -25,43 +25,20 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ## 🏗️ System Architecture
 
-```mermaid
-graph TB
-    subgraph "Data Sources"
-        A[MIMIC-III Dataset<br/>📊 Clinical Database]
-    end
-    
-    subgraph "Data Processing Layer"
-        B[Data Cleaning<br/>🧹 Python/Pandas]
-        C[Format Conversion<br/>📦 Parquet Files]
-    end
-    
-    subgraph "Big Data Infrastructure"
-        D[Hadoop HDFS<br/>🗄️ Distributed Storage]
-        E[Apache Hive<br/>📈 Data Warehouse]
-        F[MapReduce Jobs<br/>⚙️ Java Processing]
-    end
-    
-    subgraph "Analytics & Results"
-        G[Healthcare Insights<br/>📊 Clinical Analytics]
-        H[Performance Metrics<br/>📈 KPI Dashboard]
-    end
-    
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    D --> F
-    E --> G
-    F --> G
-    G --> H
-    
-    style A fill:#e1f5fe
-    style D fill:#f3e5f5
-    style E fill:#e8f5e8
-    style F fill:#fff3e0
-    style G fill:#fce4ec
-```
+<div align="center">
+  <img src="docs/Big Data Pipeline for Healthcare Analytics (MIMIC-III).png" alt="Big Data Pipeline Architecture" width="100%">
+  <p><em>Complete data pipeline from MIMIC-III dataset to healthcare insights</em></p>
+</div>
+
+### 📊 **Pipeline Flow Explanation**
+
+1. **📁 MIMIC-III Demo Dataset** → Raw healthcare data input
+2. **🐳 Docker Environment** → Containerized Hadoop ecosystem setup  
+3. **🐍 Python Data Cleaning** → Data preprocessing with Pandas
+4. **📦 Parquet Conversion** → Optimized columnar storage format
+5. **🗄️ Hadoop HDFS** → Distributed data storage
+6. **⚙️ MapReduce Jobs** → Java-based parallel processing (Average Age calculation)
+7. **🐝 Apache Hive** → SQL-based analytics and table creation
 
 ---
 
