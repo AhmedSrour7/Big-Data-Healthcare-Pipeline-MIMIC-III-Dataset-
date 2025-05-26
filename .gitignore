@@ -1,0 +1,25 @@
+# Ignore dataset files
+Dataset/*
+!Dataset/README.md
+
+# Ignore cleaned data files
+Cleaned_Data/*
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore logs or temp files
+*.log
+*.tmp
+
+# Ignore virtual environments (if any)
+env/
+venv/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
