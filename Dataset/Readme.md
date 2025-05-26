@@ -39,3 +39,16 @@ These four files were chosen because they offer a good base for analytics like:
 Original dataset available from [PhysioNet](https://mimic.physionet.org/).  
 Usage requires credentialed access and agreement to the data license.
 
+---
+
+## 📦 About MIMIC-III
+
+MIMIC-III (Medical Information Mart for Intensive Care) is a large, publicly available database of de-identified health data from ICU patients. It contains 50+ tables including labs, procedures, prescriptions, notes, etc.
+
+Only a subset of this dataset was used in this project based on relevance.
+
+🔗 Full schema and table descriptions are available at:  
+https://mimic.mit.edu/docs/iii/
+
+
+
