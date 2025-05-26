@@ -1,4 +1,4 @@
-# 📁 Raw Dataset (MIMIC-III)
+# 📁 MIMIC-III Dataset
 
 This folder contains a selection of raw CSV files extracted from the MIMIC-III Clinical Database.  
 These files are the **starting point** of the pipeline — before any cleaning or transformation.
