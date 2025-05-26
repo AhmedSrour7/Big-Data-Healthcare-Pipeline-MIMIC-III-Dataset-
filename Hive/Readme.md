@@ -20,7 +20,7 @@ Key topics covered:
 
 | Query Description               | Chart |
 |--------------------------------|--------|
-| Most common diagnoses (ICD)    | ![](./results/most_common_diagnoses.png) |
+| Most common diagnoses (ICD)    | ![](./hive results/Average length of stay per diagnosis.png) |
 | ICU readmission rate           | ![](./results/icu_readmission_rate.png) |
 | Mortality stats by gender/age  | ![](./results/mortality_stats.png) |
 
