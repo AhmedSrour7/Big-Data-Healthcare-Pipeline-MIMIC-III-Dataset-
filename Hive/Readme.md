@@ -6,7 +6,7 @@ This folder contains SQL queries executed on top of the MIMIC-III dataset using 
 
 ## 📄 Queries
 
-Queries are stored in [`queries.sql`](./Hive/hive%20queries.txt).  
+Queries are stored in [`Hive_queries`](./Hive/hive%20queries.txt).  
 Key topics covered:
 
 - Most common ICD diagnoses
