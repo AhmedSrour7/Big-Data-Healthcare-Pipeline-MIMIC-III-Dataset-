@@ -6,7 +6,7 @@ This folder contains SQL queries executed on top of the MIMIC-III dataset using 
 
 ## 📄 Queries
 
-Queries are stored in [`queries.sql`](./queries.sql).  
+Queries are stored in [`queries.sql`](./Hive/hive%20queries.txt).  
 Key topics covered:
 
 - Most common ICD diagnoses
@@ -38,7 +38,7 @@ The following external tables were created in Hive using the cleaned Parquet fil
 |----------------------------------------|--------|
 | Average length of stay per diagnosis   |![](./Hive%20Results/Average%20length%20of%20stay%20per%20diagnosis.png) |
 | Distribution of ICU readmissions       |![](./Hive%20Results/Distribution%20of%20ICU%20readmissions.png) |
-| Mortality by gender and age group      |![](./Hive%20Results/Mortality%20by%20gender%20and%20age%20groups.png) |
+| Mortality by gender and age group      |![](./Hive%20Results/Mortality%20rates%20by%20demographic%20groups.png) |
 
 ---
 
