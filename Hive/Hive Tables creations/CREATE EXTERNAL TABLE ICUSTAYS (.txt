@@ -14,4 +14,4 @@ TBLPROPERTIES (
   'parquet.validation'='STRICT'
 );
 
-DESCRIBE FORMATTED ICUSTAYS;
+

@@ -13,4 +13,3 @@ TBLPROPERTIES (
 );
 
 
-DESCRIBE FORMATTED diagnoses_icd ;
