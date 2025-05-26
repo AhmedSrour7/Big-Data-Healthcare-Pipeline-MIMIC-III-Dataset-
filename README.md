@@ -1,10 +1,14 @@
 # 🏥 Big Data Healthcare Pipeline - MIMIC-III Dataset
 
-[![Big Data](https://img.shields.io/badge/Big%20Data-Hadoop%20%7C%20Spark%20%7C%20Hive-blue.svg)](https://github.com/AhmedSrour7/Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-)
-[![Healthcare Analytics](https://img.shields.io/badge/Healthcare-Analytics%20Pipeline-green.svg)](https://mimic.mit.edu/)
-[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED.svg)](https://www.docker.com/)
-[![Java](https://img.shields.io/badge/Java-MapReduce-ED8B00.svg)](https://hadoop.apache.org/)
-[![Hive](https://img.shields.io/badge/Apache-Hive-FDEE21.svg)](https://hive.apache.org/)
+[![Platform](https://img.shields.io/badge/Platform-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![Framework](https://img.shields.io/badge/Framework-Hadoop-66ccff?logo=apache&logoColor=white)](https://hadoop.apache.org/)
+[![Language](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Library](https://img.shields.io/badge/Cleaning-pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Format](https://img.shields.io/badge/Conversion-pyarrow-blue?logo=apache&logoColor=white)](https://arrow.apache.org/)
+[![Query Engine](https://img.shields.io/badge/Query%20Engine-Hive-FDEE21?logo=apachehive&logoColor=black)](https://hive.apache.org/)
+[![Compute](https://img.shields.io/badge/Compute-MapReduce-ED8B00?logo=apache&logoColor=white)](https://hadoop.apache.org/)
+[![Dataset](https://img.shields.io/badge/Dataset-MIMIC--III-7c4dff)](https://mimic.mit.edu/)
+
 
 > **A comprehensive big data pipeline for healthcare analytics using MIMIC-III clinical database with Hadoop, Hive, and MapReduce implementation**
 
