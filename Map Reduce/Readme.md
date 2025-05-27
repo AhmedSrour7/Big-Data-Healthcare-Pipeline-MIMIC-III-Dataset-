@@ -12,7 +12,7 @@ This folder contains the Java-based MapReduce job used to calculate the **averag
 |------|-------------|
 | [`java_script.txt`](./java_script.txt) | Java program (Mapper + Reducer) to calculate average patient age based on DOB and DOD. |
 | `avg_age.jar` | *(Not included)* Compiled MapReduce job JAR (generated via `javac` + `jar`). |
-| ![Average Age Output](./Average-Age-Result.jpg) | Screenshot showing the job result output. |
+
 
 ---
 
