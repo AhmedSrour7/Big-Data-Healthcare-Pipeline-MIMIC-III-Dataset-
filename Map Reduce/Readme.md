@@ -33,3 +33,7 @@ hadoop jar avg_age.jar AverageAge /user/root/mimic/Patients.csv /user/root/outpu
 
 # View the output
 hdfs dfs -cat /user/root/output_avg/part-r-00000
+
+---
+## Output Screenshot
+![Average Age Output](./Average-Age-Result.jpg)
