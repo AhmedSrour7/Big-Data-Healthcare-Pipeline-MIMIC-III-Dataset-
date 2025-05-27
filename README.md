@@ -110,7 +110,7 @@ This project implements a complete **big data pipeline** for healthcare analytic
 ---
 
 📁 Project Structure
-Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-/
+```Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-/
 ├── 🐳 docker/                     # Docker containerization
 │   ├── docker-compose.yml         # Multi-service setup
 │   └── README.md                   # Docker setup guide
@@ -145,7 +145,7 @@ Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-/
 │   └── troubleshooting.md
 │
 └── 📋 README.md                   # This file
-
+      ```
 ## 📊 Analytics Examples
 
 ### 🔍 **Hive SQL Analytics**
