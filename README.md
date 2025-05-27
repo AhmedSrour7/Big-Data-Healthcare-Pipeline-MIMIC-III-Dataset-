@@ -78,7 +78,7 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 I work with cutting-edge big data and healthcare analytics technologies. Here's an interactive visualization of my tech stack:
 
-**[🔗 View Interactive Tech Stack Visualization](./index.html)**
+**[🔗 View Interactive Tech Stack Visualization](index.html)**
 
 ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Interactive-blue?style=for-the-badge)
 
