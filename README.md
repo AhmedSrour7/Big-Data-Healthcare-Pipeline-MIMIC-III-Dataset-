@@ -344,3 +344,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Built with ❤️ for the Healthcare Analytics and Big Data Community**
 
 </div>
+
+<div align="center">
+
+![Epic Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=Healthcare%20Analytics&fontSize=70&fontColor=white&animation=twinkling&fontAlignY=35&desc=Hadoop%20•%20Hive%20•%20MapReduce%20•%20Clinical%20Intelligence&descAlignY=55&descSize=20)
+
+
+</div>
+
