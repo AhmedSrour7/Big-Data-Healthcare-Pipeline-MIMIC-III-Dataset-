@@ -109,96 +109,63 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 
-📁 Project Structure
-##  **PROJECT STRUCTURE**
+## 📁 *Project Structure*
+BigData-Healthcare-Pipeline-MIMIC-III/
+│
+├── docker_env/                         # Docker environment setup
+│   ├── docker-compose.yml              # Multi-service configuration
+│   └── README.md                       # Docker setup guide
+│
+├── Cleaning&conversion_scripts/        # Data cleaning and conversion scripts
+│   ├── 1.admission_cleaning_method.ipynb
+│   ├── 2.patients_cleaning_method.ipynb
+│   ├── ICUstays_convert_to_parquet.ipynb
+│   ├── admissions_parq_pyarrow.ipynb
+│   ├── diagnoses_icd.ipynb
+│   ├── pyarrow_patient_parquet_convert.ipynb
+│   └── README.md                       # Script usage guide
+│
+├── Dataset/                            # Raw MIMIC-III data files
+│   ├── PATIENTS.csv
+│   ├── ADMISSIONS.csv
+│   └── LABEVENTS.csv
+│
+├── Cleaned_Data/                       # Cleaned and transformed data
+│   ├── ADMISSIONS.csv
+│   ├── DIAGNOSES_ICD.csv
+│   ├── PATIENTS.csv
+│   ├── ICUSTAYS.csv
+│   └── README.md
+│
+├── Hive/                               # Hive data warehouse
+│   ├── Hive Tables creations/          # SQL scripts for table creation
+│   │   ├── CREATE EXTERNAL TABLE ADMISSIONS.txt
+│   │   ├── CREATE EXTERNAL TABLE ICUSTAYS.txt
+│   │   ├── CREATE EXTERNAL TABLE PATIENTS.txt
+│   │   └── CREATE EXTERNAL TABLE diagnoses_icd.txt
+│   │
+│   ├── Hive Queries/                   # Analytical queries
+│   │   └── hive_queries.txt
+│   │
+│   ├── Hive Results/                   # Queries results visualizations
+│   │   ├── Average length of stay per diagnosis.png
+│   │   ├── Distribution of ICU readmissions.png
+│   │   ├── Hive-tables.png
+│   │   └── Mortality rates by demographic groups.png
+│   └── README.md
+│
+├── MapReduce/                          # Java-based data processing
+│   ├── java_script.txt
+│   ├── Average-Age-Result.jpg
+│   └── README.md                       # MapReduce documentation
+│
+├── docs/                               # Full project documentation
+│   ├── setup_guide.md
+│   ├── pics/
+│   └── README.md
+│
+└── 📖 README.md                         # Project overview and instructions
 
-<details>
-<summary> <strong>CLICK TO EXPLORE THE COMPLETE STRUCTURE</strong></summary>
-
-<br>
-
-```
- MIMIC-III Healthcare Analytics/
-│
-├── Documentation/                    # Complete project documentation
-│   ├──  architecture_diagram.PNG    # Visual system architecture
-│   ├──  ETL_documentation.md         # Detailed ETL process guide
-│   ├──  project_overview.md          # High-level project summary
-│   └──  Technology Stack.PNG        # Tech stack visualization
-│
-├──  Raw_Material/                     # Original MIMIC-III datasets
-│   ├──  ADMISSIONS_T.xlsx           # Hospital admission records
-│   ├──  D_ICD_DIAGNOSES_T.xlsx      # ICD diagnosis codes dictionary
-│   ├──  DIAGNOSES_ICD_T.xlsx        # Patient diagnosis mappings
-│   ├──  ICUSTAYS_T.xlsx             # ICU stay records
-│   ├──  MIMIC_README.md             # MIMIC-III documentation
-│   ├──  mimic-iii-clinical-database-demo-1.4.zip  # Demo dataset
-│   └──  PATIENTS_T.csv              # Patient demographic data
-│
-├──  MIMIC_Datawarehouse/             # Star schema implementation
-│   ├──  Data_Modeling_StarSchema.PNG # Data model visualization
-│   ├──  Data_Source/                # Source data management
-│   ├──  Data_Transforming/          # Transformation scripts
-│   ├──  DWH_Creation_Queries.sql   # Data warehouse setup queries
-│   ├──  HDFS-Uploading.bash         # HDFS upload automation
-│   ├──  Insights_Queries.sql        # Analytics query collection
-│   ├──  Pipe_Line.PNG               # Pipeline visualization
-│   ├──  README.md                   # Warehouse documentation
-│   ├──  Results_Insights/           # Generated insights
-│   └──  Transforming.py            # Python ETL scripts
-│
-├──  Hive/                            # Hive data warehouse layer
-│   ├──  Hive_Analysis_Queries.sql   # Advanced analytics queries
-│   └──  Hive_Loading.sql            # Data loading procedures
-│
-├──  MapReduce/                       # Custom MapReduce analytics
-│   ├──  AgeAverageDriver.java       # MapReduce job driver
-│   ├──  AgeMapper.java             # Age data mapper
-│   ├──  AverageAgeReducer.java      # Age statistics reducer
-│   ├──  PATIENTS.csv               # Patient data for processing
-│   └──  README.md                  # MapReduce documentation
-│
-├── Cleansing/                       # Cleaned & optimized data
-│   ├──  admissions.parquet          # Cleaned admission data
-│   ├──  d_icd_diagnoses.parquet     # Cleaned diagnosis codes
-│   ├──  diagnoses_icd.parquet       # Cleaned diagnosis mappings
-│   ├──  icustays.parquet            # Cleaned ICU data
-│   └──  patients.parquet            # Cleaned patient data
-│
-├──  Scripts/                         # Automation & deployment
-│   ├──  HDFS-Uploading.bash         # HDFS data upload script
-│   ├── ▶ Run_Pipeline.sh             # Master pipeline executor
-│   └──  Transforming.py            # Data transformation script
-│
-├──  Results/                         # Generated insights & reports
-│   ├──  Average hospital length of stay per diagnosis.xlsx
-│   ├──  Distribution of ICU readmissions.xlsx
-│   └──  Mortality.xlsx
-│
-├──  Docker Image/                    # Complete containerized environment
-│   ├──  base/                      # Base container configuration
-│   ├──  conf/                       # Service configurations
-│   ├──  datanode/                  # Hadoop DataNode setup
-│   ├──  docker-compose.yml         # Multi-service orchestration
-│   ├──  entrypoint.sh              # Container startup script
-│   ├──  hadoop.env                 # Hadoop environment variables
-│   ├──  hadoop-hive.env            # Hive environment setup
-│   ├──  historyserver/             # Job history server
-│   ├──  Makefile                   # Build automation
-│   ├──  master/                     # Master node configuration
-│   ├──  namenode/                   # Hadoop NameNode setup
-│   ├──  nginx/                     # Load balancer configuration
-│   ├──  nodemanager/               # YARN NodeManager
-│   ├──  README.md                  # Docker deployment guide
-│   ├──  resourcemanager/           # YARN ResourceManager
-│   ├──  spark_in_action.MD         # Spark integration guide
-│   ├──  startup.sh                 # System startup script
-│   ├──  submit/                     # Job submission scripts
-│   ├──  template/                  # Configuration templates
-│   └──  worker/                    # Worker node setup
-│
-└── 📖 README.md                       # This amazing documentation!
-```
 
 </details>
 
