@@ -152,6 +152,7 @@ BigData-Healthcare-Pipeline-MIMIC-III/
 │   │   ├── Distribution of ICU readmissions.png
 │   │   ├── Hive-tables.png
 │   │   └── Mortality rates by demographic groups.png
+│   │
 │   └── README.md
 │
 ├── MapReduce/                          # Java-based data processing
@@ -164,7 +165,7 @@ BigData-Healthcare-Pipeline-MIMIC-III/
 │   ├── pics/
 │   └── README.md
 │
-└── 📖 README.md                         # Project overview and instructions
+└── README.md                           # Project overview and instructions
 
 
 </details>
