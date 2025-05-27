@@ -67,7 +67,6 @@ This project implements a complete **big data pipeline** for healthcare analytic
 ## 🛠️ Technologies Used
 <div align="center">
   <img src="docs/tech.png" alt="Big Data Pipeline Architecture" width="100%">
-  <p><em>Complete data pipeline from MIMIC-III dataset to healthcare insights</em></p>
 </div>
 ---
 
