@@ -37,4 +37,5 @@ hdfs dfs -cat /user/root/output_avg/part-r-00000
 
 Below is the output of the MapReduce job after successful execution:
 
-![Average Age Output](./Average-Age-Result.jpg)
+![Average Age Output](Average-Age-Result.jpg)
+
