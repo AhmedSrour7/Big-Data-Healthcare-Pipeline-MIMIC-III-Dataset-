@@ -109,58 +109,56 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 
-## 📁 Project Structure
-
-- 🐳 `docker_env/` — Docker environment setup  
-  - `docker-compose.yml` — Multi-service configuration  
-  - `README.md` — Docker setup guide
-
-- 📂 `Cleaning&conversion_scripts/` — Data cleaning and conversion scripts  
-  - `1.admission_cleaning_method.ipynb`  
-  - `2.patients_cleaning_method.ipynb`  
-  - `ICUstays_convert_to_parquet.ipynb`  
-  - `admissions_parq_pyarrow.ipynb`  
-  - `diagnoses_icd.ipynb`  
-  - `pyarrow_patient_parquet_convert.ipynb`  
-  - `README.md` — Script usage guide
-
-- 📂 `Dataset/` — Raw MIMIC-III data files  
-  - `PATIENTS.csv`  
-  - `ADMISSIONS.csv`  
-  - `LABEVENTS.csv`
-
-- 📂 `Cleaned_Data/` — Cleaned and transformed data  
-  - `ADMISSIONS.csv`  
-  - `DIAGNOSES_ICD.csv`  
-  - `PATIENTS.csv`  
-  - `ICUSTAYS.csv`  
-  - `README.md`
-
-- 📊 `Hive/` — Hive data warehouse  
-  - `Hive Tables creations/` — SQL scripts for table creation  
-    - `CREATE EXTERNAL TABLE ADMISSIONS (.txt`  
-    - `CREATE EXTERNAL TABLE ICUSTAYS (.txt`  
-    - `CREATE EXTERNAL TABLE PATIENTS (.txt`  
-    - `CREATE EXTERNAL TABLE diagnoses_icd.txt`  
-  - `Hive Queries/` — Analytical queries  
-    - `hive_queries.txt`  
-  - `Hive Results/` — Queries results (visuals)  
-    - `Average length of stay per diagnosis.png`  
-    - `Distribution of ICU readmissions.png`  
-    - `Hive-tables.png`  
-    - `Mortality rates by demographic groups.png`
-
-- ⚙️ `MapReduce/` — Java-based data processing  
-  - `java_script.txt`  
-  - `Average-Age-Result.jpg`  
-  - `README.md` — MapReduce documentation
-
-- 📚 `docs/` — Full project documentation  
-  - `setup_guide.md`  
-  - `pics/`
-
-- 📋 `README.md` — Main project overview
-
+BigData-Healthcare-Pipeline-MIMIC-III/
+├── docker_env/                     # Docker environment setup
+│   ├── docker-compose.yml          # Multi-service configuration
+│   └── README.md                   # Docker setup guide
+│
+├── Cleaning&conversion_scripts/    # Data cleaning and conversion scripts
+│   ├── 1.admission_cleaning_method.ipynb
+│   ├── 2.patients_cleaning_method.ipynb
+│   ├── ICUstays_convert_to_parquet.ipynb
+│   ├── admissions_parq_pyarrow.ipynb
+│   ├── diagnoses_icd.ipynb
+│   ├── pyarrow_patient_parquet_convert.ipynb
+│   └── README.md                   # Script usage guide
+│
+├── Dataset/                        # Raw MIMIC-III data files
+│   ├── PATIENTS.csv
+│   ├── ADMISSIONS.csv
+│   └── LABEVENTS.csv
+│
+├── Cleaned_Data/                   # Cleaned and transformed data
+│   ├── ADMISSIONS.csv
+│   ├── DIAGNOSES_ICD.csv
+│   ├── PATIENTS.csv
+│   ├── ICUSTAYS.csv
+│   └── README.md
+│
+├── Hive/                           # Hive data warehouse
+│   ├── Hive Tables creations/      # SQL scripts for table creation
+│   │   ├── CREATE EXTERNAL TABLE ADMISSIONS (.txt
+│   │   ├── CREATE EXTERNAL TABLE ICUSTAYS (.txt
+│   │   ├── CREATE EXTERNAL TABLE PATIENTS (.txt
+│   │   └── CREATE EXTERNAL TABLE diagnoses_icd.txt
+│   ├── Hive Queries/               # Analytical queries
+│   │   └── hive_queries.txt
+│   ├── Hive Results/               # Queries Results
+│   │   ├── Average length of stay per diagnosis.png
+│   │   ├── Distribution of ICU readmissions.png
+│   │   ├── Hive-tables.png
+│   │   └── Mortality rates by demographic groups.png
+│
+├── MapReduce/                      # Java-based data processing
+│   ├── java_script.txt
+│   ├── Average-Age-Result.jpg
+│   └── README.md                   # MapReduce documentation
+│
+├── docs/                           # Full project documentation
+│   ├── setup_guide.md
+│   └── pics/
+│
+└── README.md                       # Main project overview
 
 ---
 
