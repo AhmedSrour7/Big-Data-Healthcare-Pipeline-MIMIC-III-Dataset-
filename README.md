@@ -279,17 +279,6 @@ The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 
 ---
 
-## 📸 Visual Documentation
-
-### 🖥️ **System Screenshots**
-
-| Component | Screenshot | Description |
-|-----------|------------|-------------|
-| **Docker Services** | ![Docker](screenshots/docker_services.png) | All containers running successfully |
-| **Hive Tables** | ![Hive](screenshots/hive_tables.png) | Created tables with proper schemas |
-| **Query Results** | ![Results](screenshots/query_results.png) | Sample analytics output |
-| **MapReduce Jobs** | ![MapReduce](screenshots/mapreduce_output.png) | Parallel processing execution |
-
 ---
 
 ## 📚 Complete Documentation
@@ -307,9 +296,7 @@ This project demonstrates mastery of:
 - **Containerization**: Docker for big data infrastructure
 - **SQL Analytics**: Complex healthcare queries and optimization
 - **Java Programming**: Custom MapReduce algorithm development
-
 ---
-
 ## 🏆 Project Achievements
 
 ### ✅ **Successfully Implemented**
@@ -359,13 +346,7 @@ Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTIN
 - **Docker Community**: For containerization best practices
 - **Healthcare Informatics Community**: For domain expertise
 
----
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 <div align="center">
 
