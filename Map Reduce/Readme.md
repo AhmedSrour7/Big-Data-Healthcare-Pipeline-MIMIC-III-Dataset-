@@ -8,13 +8,13 @@ This folder contains the Java-based MapReduce job used to calculate the **averag
 
 | File | Description |
 |------|-------------|
-| `AverageAge.java` | Java program with Mapper and Reducer to compute average age from patient DOB and DOD. |
+| [`AverageAge.java`](./AverageAge.java) | Java program with Mapper and Reducer to compute average age from patient DOB and DOD. |
 | `avg_age.jar` | Compiled JAR file (generated via `javac` + `jar`). |
-| `results/avg_age_output.png` | Screenshot or chart showing the output (e.g., average age = 70.6). |
+| `results/avg_age_output.png` | Screenshot showing the output (e.g., average age = 70.6). |
 
 ---
 
-## ⚙️ Execution Steps
+## ⚙️ How to Run
 
 ```bash
 # Compile the Java code
@@ -22,7 +22,7 @@ export HADOOP_CLASSPATH=$(hadoop classpath)
 javac -classpath $HADOOP_CLASSPATH -d avg_classes AverageAge.java
 jar -cvf avg_age.jar -C avg_classes/ .
 
-# Upload input data
+# Upload input data to HDFS
 hdfs dfs -mkdir -p /user/root/mimic
 hdfs dfs -put /root/Patients.csv /user/root/mimic/
 
