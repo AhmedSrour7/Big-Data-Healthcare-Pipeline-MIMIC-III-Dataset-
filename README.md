@@ -207,7 +207,7 @@ FROM (
         subject_id, hadm_id
 ) t
 GROUP BY 
-    readmit_flagك
+    readmit_flag;
 ```
 **Mortality rates by demographic groups:**
 ```sql
@@ -285,9 +285,8 @@ The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 
 ### 📖 **Available Guides**
 - **[🔧 Setup Guide](docs/setup_guide.md)**: Step-by-step installation
-- **[🏗️ Data Pipeline](docs/data_pipeline.md)**: Architecture deep-dive  
-- **[📊 Analytics Guide](docs/analytics_guide.md)**: Query examples and best practices
-- **[🔍 Troubleshooting](docs/troubleshooting.md)**: Common issues and solutions
+- **[🏗️ Data Pipeline](docs/Architechture.png)**: Architecture deep-dive  
+- **[📊 Analytics Guide](Hive/Hive%20Queries/hive_queries.txt)**: Query examples and best practices
 
 ### 🎓 **Learning Outcomes**
 This project demonstrates mastery of:
