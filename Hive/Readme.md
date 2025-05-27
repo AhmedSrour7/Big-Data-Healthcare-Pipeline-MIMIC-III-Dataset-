@@ -6,7 +6,7 @@ This folder contains SQL queries executed on top of the MIMIC-III dataset using 
 
 ## 📄 Queries
 
-Queries are stored in [`hive_queries.txt`](../Dataset/Hive%20Queries/hive_queries.txt)
+Queries are stored in [`hive_queries.txt`](../Hive/Hive%20Queries/hive_queries.txt)
 
 Key topics covered:
 
