@@ -109,7 +109,12 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 
-## 📁 Project Structure
+## 📁 *Project Structure* ##
+<details>
+<summary> <strong>CLICK TO EXPLORE THE COMPLETE STRUCTURE</strong></summary>
+
+<br>
+```
 
 BigData-Healthcare-Pipeline-MIMIC-III/
 ├── docker_env/                  # Docker environment setup
@@ -163,6 +168,9 @@ BigData-Healthcare-Pipeline-MIMIC-III/
     ├── setup_guide.md
     ├── pics/
     └── README.md                # Main project overview
+    ```
+
+</details>
 
 ---
 
