@@ -84,15 +84,13 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/AhmedSrour7/Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-.git
-   cd Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-
+   git clone https://github.com/Marcel-Jan/docker-hadoop-spark.git
+    cd docker-hadoop-spark
    ```
 
 2. **Start the Big Data Environment**
    ```bash
-   cd docker
    docker-compose up -d
-   
    # Verify all services are running
    docker-compose ps
    ```
@@ -172,75 +170,90 @@ BigData-Healthcare-Pipeline-MIMIC-III/
 
 ### 🔍 **Hive SQL Analytics**
 
-**Average Length of Stay by Diagnosis:**
+**Average length of stay per diagnosis:**
 ```sql
 SELECT 
-    diagnosis,
-    AVG(los_days) as avg_length_of_stay,
-    COUNT(*) as patient_count,
-    STDDEV(los_days) as std_deviation
-FROM admissions 
-WHERE los_days > 0
-GROUP BY diagnosis
-ORDER BY avg_length_of_stay DESC
-LIMIT 20;
+  d.icd9_code,
+  AVG(DATEDIFF(a.dischtime, a.admittime)) AS avg_length_of_stay
+FROM 
+  admissions a
+JOIN 
+  diagnoses_icd d 
+ON 
+  a.hadm_id = d.hadm_id
+GROUP BY 
+  d.icd9_code
+ORDER BY 
+  avg_length_of_stay DESC;
 ```
 
-**30-Day Readmission Analysis:**
+**Distribution of ICU readmissions:**
 ```sql
-WITH readmissions AS (
+SELECT 
+    readmit_flag,
+    COUNT(*) AS num_patients
+FROM (
     SELECT 
         subject_id,
         hadm_id,
-        admittime,
-        dischtime,
-        LEAD(admittime) OVER (
-            PARTITION BY subject_id 
-            ORDER BY admittime
-        ) as next_admission
-    FROM admissions
+        COUNT(icustay_id) AS icu_visits,
+        CASE 
+            WHEN COUNT(icustay_id) > 1 THEN 'Readmitted'
+            ELSE 'Single Stay'
+        END AS readmit_flag
+    FROM 
+        icustays
+    GROUP BY 
+        subject_id, hadm_id
+) t
+GROUP BY 
+    readmit_flagك
+```
+**Mortality rates by demographic groups:**
+```sql
+WITH patient_age AS (
+    SELECT 
+        p.subject_id,
+        p.gender,
+        FLOOR(DATEDIFF(a.admittime, p.dob) / 365.25) AS age,
+        a.deathtime
+    FROM 
+        patients p
+    JOIN 
+        admissions a ON p.subject_id = a.subject_id
+),
+age_groups AS (
+    SELECT *,
+        CASE
+            WHEN age < 18 THEN '0-17'
+            WHEN age BETWEEN 18 AND 39 THEN '18-39'
+            WHEN age BETWEEN 40 AND 64 THEN '40-64'
+            WHEN age BETWEEN 65 AND 79 THEN '65-79'
+            ELSE '80+'
+        END AS age_group
+    FROM 
+        patient_age
 )
 SELECT 
-    COUNT(*) as total_admissions,
-    SUM(CASE 
-        WHEN DATEDIFF(next_admission, dischtime) <= 30 
-        THEN 1 ELSE 0 
-    END) as readmissions_30_days,
-    ROUND(
-        100.0 * SUM(CASE 
-            WHEN DATEDIFF(next_admission, dischtime) <= 30 
-            THEN 1 ELSE 0 
-        END) / COUNT(*), 2
-    ) as readmission_rate_percent
-FROM readmissions
-WHERE next_admission IS NOT NULL;
-```
+    gender,
+    age_group,
+    COUNT(*) AS total_admissions,
+    SUM(CASE WHEN deathtime IS NOT NULL THEN 1 ELSE 0 END) AS num_deaths,
+    ROUND(SUM(CASE WHEN deathtime IS NOT NULL THEN 1 ELSE 0 END) / COUNT(*) * 100, 2) AS mortality_rate_pct
+FROM 
+    age_groups
+GROUP BY 
+    gender, age_group
+ORDER BY 
+    gender, age_group;
 
+```
 ### ⚙️ **MapReduce Processing**
 
 **Patient Age Group Analysis (Java):**
-```java
-public class AgeGroupMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
-    
-    @Override
-    public void map(LongWritable key, Text value, Context context) 
-            throws IOException, InterruptedException {
-        
-        String[] fields = value.toString().split(",");
-        if (fields.length > 3) {
-            int age = Integer.parseInt(fields[3].trim());
-            String ageGroup = getAgeGroup(age);
-            context.write(new Text(ageGroup), new IntWritable(1));
-        }
-    }
-    
-    private String getAgeGroup(int age) {
-        if (age < 18) return "Pediatric";
-        else if (age < 65) return "Adult";
-        else return "Elderly";
-    }
-}
-```
+java
+The script is available in [java_script.txt](./MapReduce/java_script.txt).
+
 
 ---
 
