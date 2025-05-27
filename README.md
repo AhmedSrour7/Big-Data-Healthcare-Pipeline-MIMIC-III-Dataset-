@@ -1,5 +1,11 @@
 # 🏥 Big Data Healthcare Pipeline - MIMIC-III Dataset
 
+<div align="center">
+
+![Epic Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300§ion=header&text=Healthcare%20Analytics&fontSize=70&fontColor=white&animation=twinkling&fontAlignY=35&desc=Hadoop%20•%20Hive%20•%20MapReduce%20•%20Clinical%20Intelligence&descAlignY=55&descSize=20)
+
+</div>
+
 [![Platform](https://img.shields.io/badge/Platform-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![Framework](https://img.shields.io/badge/Framework-Hadoop-66ccff?logo=apache&logoColor=white)](https://hadoop.apache.org/)
 [![Language](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -313,19 +319,3 @@ This project demonstrates mastery of:
 - **Clinical Insights**: Identified key patterns for hospital operations
 
 ---
-
-<div align="center">
-
-### ⭐ **If this project helped you learn big data technologies, please give it a star!** ⭐
-
-**Built with ❤️ for the Healthcare Analytics and Big Data Community**
-
-</div>
-
-<div align="center">
-
-![Epic Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=Healthcare%20Analytics&fontSize=70&fontColor=white&animation=twinkling&fontAlignY=35&desc=Hadoop%20•%20Hive%20•%20MapReduce%20•%20Clinical%20Intelligence&descAlignY=55&descSize=20)
-
-
-</div>
-
