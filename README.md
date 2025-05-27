@@ -2,10 +2,9 @@
 
 <div align="center">
 
-![Epic Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300§ion=header&text=Healthcare%20Analytics&fontSize=70&fontColor=white&animation=twinkling&fontAlignY=35&desc=Hadoop%20•%20Hive%20•%20MapReduce%20•%20Clinical%20Intelligence&descAlignY=55&descSize=20)
+![Epic Header](https://capsule-render.vercel.app/api?type=round&color=gradient&customColorList=0,51,102,0,153,76&height=350&section=header&text=Healthcare%20Analytics&fontSize=80&fontColor=white&animation=fade&fontAlignY=38&desc=Big%20Data%20&%20Clinical%20Insights&descAlignY=58&descSize=22&rotate=15)
 
 </div>
-
 [![Platform](https://img.shields.io/badge/Platform-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![Framework](https://img.shields.io/badge/Framework-Hadoop-66ccff?logo=apache&logoColor=white)](https://hadoop.apache.org/)
 [![Language](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
