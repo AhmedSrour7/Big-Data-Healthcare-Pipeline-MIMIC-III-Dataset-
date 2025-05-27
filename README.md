@@ -252,7 +252,7 @@ ORDER BY
 
 **Patient Age Group Analysis (Java):**
 java
-The script is available in [java_script.txt](./MapReduce/java_script.txt).
+The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 
 
 ---
