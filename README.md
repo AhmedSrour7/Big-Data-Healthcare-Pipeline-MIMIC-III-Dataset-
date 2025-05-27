@@ -315,39 +315,6 @@ This project demonstrates mastery of:
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) first.
-
-### How to Contribute
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📧 Contact & Support
-
-**Ahmed Srour**  
-📧 Email: [Your Email]  
-💼 LinkedIn: [Your LinkedIn]  
-🐙 GitHub: [@AhmedSrour7](https://github.com/AhmedSrour7)
-
-**Project Link**: https://github.com/AhmedSrour7/Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-
-
----
-
-## 🙏 Acknowledgments
-
-- **MIT-LCP**: For providing the MIMIC-III Clinical Database
-- **Apache Foundation**: For the excellent big data ecosystem
-- **Docker Community**: For containerization best practices
-- **Healthcare Informatics Community**: For domain expertise
-
-
-
 <div align="center">
 
 ### ⭐ **If this project helped you learn big data technologies, please give it a star!** ⭐
