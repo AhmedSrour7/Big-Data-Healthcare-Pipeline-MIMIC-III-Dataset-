@@ -109,8 +109,8 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 
-## 📁 *Project Structure*
-```BigData-Healthcare-Pipeline-MIMIC-III/
+## 📁 Project Structure
+BigData-Healthcare-Pipeline-MIMIC-III/
 │
 ├── docker_env/                         # Docker environment setup
 │   ├── docker-compose.yml              # Multi-service configuration
@@ -143,10 +143,8 @@ This project implements a complete **big data pipeline** for healthcare analytic
 │   │   ├── CREATE EXTERNAL TABLE ICUSTAYS.txt
 │   │   ├── CREATE EXTERNAL TABLE PATIENTS.txt
 │   │   └── CREATE EXTERNAL TABLE diagnoses_icd.txt
-│   │
 │   ├── Hive Queries/                   # Analytical queries
 │   │   └── hive_queries.txt
-│   │
 │   ├── Hive Results/                   # Queries results visualizations
 │   │   ├── Average length of stay per diagnosis.png
 │   │   ├── Distribution of ICU readmissions.png
@@ -165,8 +163,6 @@ This project implements a complete **big data pipeline** for healthcare analytic
 │   └── README.md
 │
 └── README.md                           # Project overview and instructions
-```
-</details>
 
 ---
 
