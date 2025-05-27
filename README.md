@@ -74,7 +74,6 @@ This project implements a complete **big data pipeline** for healthcare analytic
 | **Parallel Processing** | ⚙️ MapReduce (Java) | Custom data processing jobs |
 | **Data Format** | 📦 Parquet | Optimized columnar storage |
 | **Dataset** | 🏥 MIMIC-III | Real clinical database |
-
 ---
 
 ## 🚀 Quick Start Guide
