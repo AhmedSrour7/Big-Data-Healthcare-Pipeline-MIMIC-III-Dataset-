@@ -65,15 +65,10 @@ This project implements a complete **big data pipeline** for healthcare analytic
 ---
 
 ## 🛠️ Technologies Used
-
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| **Container Platform** | 🐳 Docker | Environment containerization |
-| **Distributed Storage** | 🗄️ Hadoop HDFS | Scalable data storage |
-| **Data Warehouse** | 🏢 Apache Hive | SQL-based analytics |
-| **Parallel Processing** | ⚙️ MapReduce (Java) | Custom data processing jobs |
-| **Data Format** | 📦 Parquet | Optimized columnar storage |
-| **Dataset** | 🏥 MIMIC-III | Real clinical database |
+<div align="center">
+  <img src="docs/tech.png" alt="Big Data Pipeline Architecture" width="100%">
+  <p><em>Complete data pipeline from MIMIC-III dataset to healthcare insights</em></p>
+</div>
 ---
 
 ## 🚀 Quick Start Guide
