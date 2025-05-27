@@ -39,7 +39,5 @@ Below is the output of the MapReduce job after successful execution:
 
 ![Average Age Output](../Map%20Reduce/Average-Age-Result.jpg)
 
-| Output |
-|--------|
-| ![Average Age Output](Average-Age-Result.jpg) |
+![Average Age Output](Average-Age-Result.jpg)
 
