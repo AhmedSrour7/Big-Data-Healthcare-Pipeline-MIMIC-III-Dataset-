@@ -111,40 +111,29 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 📁 Project Structure
 ```Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-/
-├── 🐳 docker/                     # Docker containerization
-│   ├── docker-compose.yml         # Multi-service setup
-│   └── README.md                   # Docker setup guide
-│
-├── 📊 hive/                       # Hive data warehouse
-│   ├── tables/                     # Table creation scripts
-│   │   ├── create_patients.sql
-│   │   ├── create_admissions.sql
-│   │   └── create_labevents.sql
-│   └── queries/                    # Analytics queries
-│       ├── length_of_stay.sql
-│       ├── readmission_analysis.sql
-│       └── mortality_rates.sql
-│
-├── ⚙️ mapreduce/                  # Custom Java processing
-│   ├── src/main/java/
-│   │   ├── PatientAnalyzer.java
-│   │   ├── DiagnosisCounter.java
-│   │   └── AgeGroupAnalyzer.java
-│   └── README.md                   # MapReduce documentation
-│
-├── 📸 screenshots/                # Visual documentation
-│   ├── docker_services.png
-│   ├── hive_tables.png
-│   ├── query_results.png
-│   └── mapreduce_output.png
-│
-├── 📚 docs/                       # Complete documentation
-│   ├── setup_guide.md
-│   ├── data_pipeline.md
-│   ├── analytics_guide.md
-│   └── troubleshooting.md
-│
-└── 📋 README.md                   # This file
+- docker/
+  - docker-compose.yml  # Docker containerization
+  - eordht_no           # Docker setup guide
+- nitro/
+  - atofteey           # Evo data rarehouse
+- nicker/
+  - create_poftconar_ekl  # Locks ones coirgypts
+  - ineothe_phlifans_dal
+  - create_inlowerspr
+  - torine_and_tits_goerings  # Ocvive sinr gilcake_toll
+  - kceatnes_occoasraorte
+  - coerlirkns_natos_torl
+- nspoiotca/
+  - sceta_lar_yuoftr  # Soctens lam processing
+  - koollob_fice_tern_hygce
+  - gsaer_lotlibty_ir-irus
+  - kvoklc_tine_goementer_tom
+- pereoc_oxl
+- erven_folvy/
+  - socker_corviteo_pnl  # Vikndl_aconireatfaloct
+  - fivc_zoilcon_phg
+  - entby_rnaacivta_phne
+  - sophodnte_deatonn_png  # Visual documentation
       ```
 ## 📊 Analytics Examples
 
