@@ -75,6 +75,24 @@ This project implements a complete **big data pipeline** for healthcare analytic
 | **Data Format** | 📦 Parquet | Optimized columnar storage |
 | **Dataset** | 🏥 MIMIC-III | Real clinical database |
 
+
+I work with cutting-edge big data and healthcare analytics technologies. Here's an interactive visualization of my tech stack:
+
+**[🔗 View Interactive Tech Stack Visualization](./index.html)**
+
+![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Interactive-blue?style=for-the-badge)
+
+### Featured Technologies:
+- 🐳 **Docker** - Containerization platform
+- 🗄️ **Hadoop HDFS** - Distributed storage system  
+- 🏢 **Apache Hive** - Data warehouse software
+- ⚙️ **MapReduce** - Parallel processing framework
+- 📦 **Parquet** - Columnar storage format
+- 🏥 **MIMIC-III** - Clinical database
+- 🐍 **Pandas** - Data analysis library
+- 🏹 **PyArrow** - Columnar data processing
+
+
 ---
 
 ## 🚀 Quick Start Guide
