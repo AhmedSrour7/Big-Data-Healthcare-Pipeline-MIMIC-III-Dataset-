@@ -42,7 +42,7 @@
 
   <h2>System Architecture</h2>
   <div align="center">
-    <img src="docs/Architechture.png" alt="Big Data Pipeline Architecture" width="100%">
+    <img src="docs/arc.png" alt="Big Data Pipeline Architecture" width="100%">
     <p><em>Complete data pipeline from MIMIC-III dataset to healthcare insights</em></p>
   </div>
 
