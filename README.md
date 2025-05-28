@@ -60,7 +60,7 @@ This project implements a complete **big data pipeline** for healthcare analytic
 - **Custom MapReduce**: Java-based parallel processing algorithms
 - **Data Optimization**: Parquet format for efficient storage and querying
 
-### 📊 **Healthcare Analytics**
+### **Healthcare Analytics**
 - **Patient Demographics Analysis**: Age, gender, and ethnicity distributions
 - **Length of Stay Prediction**: Statistical analysis of hospital stay durations
 - **Readmission Risk Assessment**: 30-day readmission rate calculations
@@ -112,13 +112,36 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 ## Project Structure
-<div align="center">
-  <img src="docs/str.png" alt="Big Data Pipeline Architecture" width="60%">
-</div>
+<details open>
+  <summary><strong>Project Structure</strong></summary>
 
-
+  ```text
+  BigData-Healthcare-Pipeline-MIMIC-III/
+      ├── data/
+      │   ├── raw/
+      │   └── processed/
+      ├── docker/
+      │   ├── hadoop/
+      │   ├── spark/
+      │   ├── hive/
+      │   ├── kafka/
+      │   └── flink/
+      ├── notebooks/
+      │   └── data_cleaning.ipynb
+      ├── scripts/
+      │   ├── mapreduce_jobs/
+      │   └── hive_queries/
+      ├── airflow/
+      │   └── dags/
+      ├── results/
+      ├── requirements.txt
+      ├── docker-compose.yml
+      └── README.md
+```
+</details>
 
 ---
+
 ## Analytics Examples
 
 ### 🔍 **Hive SQL Analytics**
