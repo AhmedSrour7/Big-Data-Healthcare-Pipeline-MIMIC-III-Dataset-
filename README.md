@@ -235,7 +235,7 @@ The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 ## 📚 Complete Documentation
 
 ### 📖 **Available Guides**
-- **[🔧 Setup Guide](docs/setup_guide.md)**: Step-by-step installation
+- **[🔧 Setup Guide](/mimic_analytics_user_manual.pdf)**: Step-by-step installation
 - **[🏗️ Data Pipeline](docs/Architechture.png)**: Architecture deep-dive  
 - **[📊 Analytics Guide](Hive/Hive%20Queries/hive_queries.txt)**: Query examples and best practices
 
