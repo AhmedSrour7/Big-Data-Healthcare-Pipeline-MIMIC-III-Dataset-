@@ -232,8 +232,6 @@ The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 
 ---
 
----
-
 ## 📚 Complete Documentation
 
 ### 📖 **Available Guides**
@@ -266,3 +264,7 @@ This project demonstrates mastery of:
 - **Clinical Insights**: Identified key patterns for hospital operations
 
 ---
+## Contact Information
+- **Name:** Ahmed Moahmed Srour
+- **Email:** [ahmedsrour600@gmail.com](mailto:ahmedsrour600@gmail.com)
+
