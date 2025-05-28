@@ -1,4 +1,4 @@
-# 🏥 Big Data Healthcare Pipeline - MIMIC-III Dataset
+# Big Data Healthcare Pipeline - MIMIC-III Dataset
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=280&section=header&text=Big%20Data%20Healthcare%20Pipeline&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlign=center&fontAlignY=40&desc=Hadoop%20•%20Hive%20•%20MapReduce%20•%20MIMIC-III%20Dataset&descSize=22&descAlign=middle&descAlignY=65)
 
@@ -19,11 +19,11 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements a complete **big data pipeline** for healthcare analytics using the **MIMIC-III Clinical Database**. The system demonstrates distributed storage, batch processing, and advanced analytics on real clinical data to provide insights into patient care, hospital operations, and medical outcomes.
 
-### 🔍 What This Project Does
+### What This Project Does
 - **Processes large-scale healthcare data** using distributed computing
 - **Performs clinical analytics** like length-of-stay prediction and readmission analysis  
 - **Implements MapReduce algorithms** for parallel processing of medical records
@@ -32,14 +32,14 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 <div align="center">
   <img src="docs/Architechture.png" alt="Big Data Pipeline Architecture" width="100%">
   <p><em>Complete data pipeline from MIMIC-III dataset to healthcare insights</em></p>
 </div>
 
-### 📊 **Pipeline Flow Explanation**
+### **Pipeline Flow Explanation**
 
 1. **📁 MIMIC-III Demo Dataset** → Raw healthcare data input
 2. **🐳 Docker Environment** → Containerized Hadoop ecosystem setup  
@@ -51,7 +51,7 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### 🔧 **Technical Implementation**
 - **Containerized Environment**: Full Docker setup with Hadoop, Hive, and Spark
@@ -69,13 +69,13 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 <div align="center">
   <img src="docs/tech.png" alt="Big Data Pipeline Architecture" width="100%">
   
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### Prerequisites
 ```bash
@@ -85,7 +85,7 @@ This project implements a complete **big data pipeline** for healthcare analytic
 - 20GB+ free disk space
 ```
 
-### 🔧 Setup Instructions
+### Setup Instructions
 
 1. **Clone the Repository**
    ```bash
@@ -111,7 +111,7 @@ This project implements a complete **big data pipeline** for healthcare analytic
    ```
 
 ---
-## 📁 Project Structure
+## Project Structure
 <div align="center">
   <img src="docs/str.png" alt="Big Data Pipeline Architecture" width="60%">
 </div>
@@ -119,7 +119,7 @@ This project implements a complete **big data pipeline** for healthcare analytic
 
 
 ---
-## 📊 Analytics Examples
+## Analytics Examples
 
 ### 🔍 **Hive SQL Analytics**
 
@@ -201,7 +201,7 @@ ORDER BY
     gender, age_group;
 
 ```
-### ⚙️ **MapReduce Processing**
+###**MapReduce Processing**
 
 **Patient Age Group Analysis (Java):**
 java
@@ -210,9 +210,9 @@ The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 
 ---
 
-## 📈 Results & Key Insights
+## Results & Key Insights
 
-### 🎯 **Clinical Insights Discovered**
+### **Clinical Insights Discovered**
 
 | Metric | Value | Insight |
 |--------|-------|---------|
@@ -222,7 +222,7 @@ The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 | **Peak Admission Day** | Monday | Resource planning opportunity |
 | **Average Patient Age** | 63.7 years | Elderly-focused care strategies needed |
 
-### 🚀 **Technical Performance**
+### **Technical Performance**
 
 - **Data Processing Speed**: 15GB/hour average throughput
 - **Query Response Time**: <45 seconds for complex analytics  
@@ -232,14 +232,14 @@ The script is available in [java_script.txt](./Map%20Reduce/java_script.txt).
 
 ---
 
-## 📚 Complete Documentation
+## Complete Documentation
 
-### 📖 **Available Guides**
-- **[🔧 Setup Guide](/mimic_analytics_user_manual.pdf)**: Step-by-step installation
-- **[🏗️ Data Pipeline](docs/Architechture.png)**: Architecture deep-dive  
-- **[📊 Analytics Guide](Hive/Hive%20Queries/hive_queries.txt)**: Query examples and best practices
+### **Available Guides**
+- **[Setup Guide](/mimic_analytics_user_manual.pdf)**: Step-by-step installation
+- **[Data Pipeline](docs/Architechture.png)**: Architecture deep-dive  
+- **[Analytics Guide](Hive/Hive%20Queries/hive_queries.txt)**: Query examples and best practices
 
-### 🎓 **Learning Outcomes**
+### **Learning Outcomes**
 This project demonstrates mastery of:
 - **Big Data Ecosystems**: Hadoop, Hive, and MapReduce
 - **Healthcare Informatics**: Clinical data analysis and HIPAA considerations
@@ -247,9 +247,9 @@ This project demonstrates mastery of:
 - **SQL Analytics**: Complex healthcare queries and optimization
 - **Java Programming**: Custom MapReduce algorithm development
 ---
-## 🏆 Project Achievements
+## Project Achievements
 
-### ✅ **Successfully Implemented**
+###  **Successfully Implemented**
 - [x] Complete containerized big data environment
 - [x] MIMIC-III dataset integration and processing
 - [x] Advanced Hive analytics for healthcare insights  
@@ -257,7 +257,7 @@ This project demonstrates mastery of:
 - [x] Comprehensive documentation and visual guides
 - [x] Performance optimization and testing
 
-### 🎯 **Business Value Delivered**
+### **Business Value Delivered**
 - **Reduced Analysis Time**: From hours to minutes for complex queries
 - **Scalable Architecture**: Handles datasets 10x larger than original
 - **Cost Efficiency**: 40% reduction in processing costs vs traditional methods
