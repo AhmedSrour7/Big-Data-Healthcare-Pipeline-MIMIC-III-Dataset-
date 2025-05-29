@@ -90,8 +90,8 @@
   <h3>Setup Instructions</h3>
   <ol>
     <li>Clone the Repository
-      <pre><code>git clone https://github.com/Marcel-Jan/docker-hadoop-spark.git
-cd docker-hadoop-spark</code></pre>
+      <pre><code>git clone https://github.com/ahmedsrour1/BigData-Healthcare-Pipeline-MIMIC-III.git
+cd BigData-Healthcare-Pipeline-MIMIC-III</code></pre>
     </li>
     <li>Start the Big Data Environment
       <pre><code>docker-compose up -d
